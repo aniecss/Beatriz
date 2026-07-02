@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Presente de Aniversário</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <audio id="bg-music" loop>
+    <source src="assets/sounds/music.mp3" type="audio/mp3">
+  </audio>
+
+  <canvas id="canvas"></canvas>
+
+  <!-- INTRO -->
+  <section id="scene-intro" class="scene active">
+    <div class="center">
+      <h1 id="start-text">Clique para começar</h1>
+    </div>
+  </section>
+
+  <!-- LOADING -->
+  <section id="scene-loading" class="scene">
+    <div class="center">
+      <h1>Carregando...</h1>
+    </div>
+  </section>
+
+  <!-- TEXTO -->
+  <section id="scene-intro-text" class="scene">
+    <div class="center">
+      <p id="intro-text"></p>
+    </div>
+  </section>
+
+  <!-- ESTRELAS -->
+  <section id="scene-stars" class="scene">
+    <div class="center">
+      <p>Existe uma pessoa especial...</p>
+    </div>
+  </section>
+
+  <!-- NOME -->
+  <section id="scene-name" class="scene">
+    <div class="center">
+      <h1 id="name-display"></h1>
+    </div>
+  </section>
+
+  <!-- HISTÓRIA -->
+  <section id="scene-story" class="scene">
+    <div class="center">
+      <p id="story-text"></p>
+    </div>
+  </section>
+
+  <!-- MENSAGEM -->
+  <section id="scene-message" class="scene">
+    <div class="center card">
+      <h2>Mensagem</h2>
+      <p id="final-message"></p>
+    </div>
+  </section>
+
+  <!-- FINAL -->
+  <section id="scene-ending" class="scene">
+    <div class="center">
+      <h1 class="big-title">🎉 Feliz Aniversário 🎉</h1>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
